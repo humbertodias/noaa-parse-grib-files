@@ -8,7 +8,9 @@ import java.net.URL;
 import java.nio.channels.Channels;
 import java.nio.channels.ReadableByteChannel;
 import java.nio.file.Paths;
+
 import org.apache.log4j.Logger;
+
 import ucar.grib.NoValidGribException;
 import ucar.grib.grib1.Grib1Input;
 import ucar.grib.grib2.Grib2Input;
