@@ -272,3 +272,11 @@ Significance of Reference Time : 1 Start of forecast
 [INFO] ------------------------------------------------------------------------
           
 ```
+
+## References
+
+[Processing Grib Data](http://donpedro.lediouris.net/software/processing.grib/index.html)
+
+[Applications](http://st-martin-basic.blogspot.com.br/2012/01/applications-pour-lire-et-explorer-les.html)
+
+[zyGrib](http://www.zygrib.org/)
