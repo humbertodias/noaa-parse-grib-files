@@ -1,8 +1,20 @@
-# NOAA Parse Grib Files
+# Parsing Grib Files
 
-Java Way to download and parse GRIB files
+Java Way to download and parse GRIB files.
 
+More information on
 **NOAA - National Oceanic and Atmospheric Administration**
+
+1. NOAA Servers 
+
+	[http://www.nco.ncep.noaa.gov/pmb/products/](http://www.nco.ncep.noaa.gov/pmb/products/)
+
+2. Global Forecast System (GFS)
+	[http://www.nco.ncep.noaa.gov/pmb/products/gfs/](http://www.nco.ncep.noaa.gov/pmb/products/gfs/)
+
+3. FTP Wave files
+	[http://www.ftp.ncep.noaa.gov/data/nccf/com/wave/prod/](http://www.ftp.ncep.noaa.gov/data/nccf/com/wave/prod/)
+
 
 
 ## Prerequires
@@ -248,7 +260,6 @@ Significance of Reference Time : 1 Start of forecast
            Second Surface Type : 255 Missing
           Second Surface value : 0.0
 --------------------------------------------------------------------
-...
 ...
 
 [INFO] ------------------------------------------------------------------------
