@@ -2,7 +2,6 @@
 
 Java Way to download and parse GRIB files.
 
-More information on
 **NOAA - National Oceanic and Atmospheric Administration**
 
 1. NOAA Servers 
