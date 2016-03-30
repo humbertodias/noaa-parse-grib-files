@@ -15,7 +15,10 @@ Java Way to download and parse GRIB files.
 3. FTP Wave files
 
 	[http://www.ftp.ncep.noaa.gov/data/nccf/com/wave/prod/](http://www.ftp.ncep.noaa.gov/data/nccf/com/wave/prod/)
+	
+4. File formats
 
+	[http://www.nco.ncep.noaa.gov/pmb/products/wave](http://www.nco.ncep.noaa.gov/pmb/products/wave/)
 
 
 ## Prerequires
@@ -37,6 +40,23 @@ Inside the folder
 ```
 cd noaa-parse-grib-files
 ```
+
+File Source Information
+
+[http://www.ftp.ncep.noaa.gov/data/nccf/com/wave/prod/glw.20160330/glw.grlc_2p5km.t00z.grib2](http://www.ftp.ncep.noaa.gov/data/nccf/com/wave/prod/glw.20160330/glw.grlc_2p5km.t00z.grib2)
+
+**Directory format**
+
+```
+/glw.20160330
+YYYY
+MM
+DD
+```
+
+***File format***
+
+[glw.grlc_2p5km.t00z.grib2](http://www.nco.ncep.noaa.gov/pmb/products/wave/glw.grlc_2p5km.t00z.grib2.shtml)
 
 Run
 
@@ -275,8 +295,12 @@ Significance of Reference Time : 1 Start of forecast
 
 ## References
 
-[Processing Grib Data](http://donpedro.lediouris.net/software/processing.grib/index.html)
+1. [Processing Grib Data](http://donpedro.lediouris.net/software/processing.grib/index.html)
 
-[Applications](http://st-martin-basic.blogspot.com.br/2012/01/applications-pour-lire-et-explorer-les.html)
+2. [Applications](http://st-martin-basic.blogspot.com.br/2012/01/applications-pour-lire-et-explorer-les.html)
 
-[zyGrib](http://www.zygrib.org/)
+3. [zyGrib](http://www.zygrib.org/)
+
+4. [Grib 1 - Format](http://www.wmo.int/pages/prog/www/WMOCodes/Guides/GRIB/GRIB1-Contents.html)
+
+5. [Grib 2 - Format](https://www.wmo.int/pages/prog/www/WMOCodes/Guides/GRIB/GRIB2_062006.pdf)
