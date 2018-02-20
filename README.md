@@ -48,7 +48,7 @@ File Source Information
 **Directory format**
 
 ```
-/glw.20160330
+/glw.20180214
 YYYY
 MM
 DD
