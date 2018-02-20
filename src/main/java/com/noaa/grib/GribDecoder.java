@@ -8,14 +8,14 @@ import ucar.grib.grib2.Grib2Dump;
 /**
  *
  * Home http://www.nco.ncep.noaa.gov/pmb/products/wave/ <code> 
- * java GridDecoder http://www.ftp.ncep.noaa.gov/data/nccf/com/wave/prod/glw.20160330/glw.grlc_2p5km.t00z.grib2
+ * java GridDecoder http://www.ftp.ncep.noaa.gov/data/nccf/com/wave/prod/glwu.20180214/glwu.grlc_2p5km_sr.t02z.grib2
  * </code>
  *
  * @author humbertodias
  */
 public class GribDecoder {
 
-	public static void main(String... args) throws Throwable {
+	public static void main(String ... args) throws Throwable {
 
 		if (args.length < 1) {
 			throw new RuntimeException("Usage GRIB2_URL_FILE");

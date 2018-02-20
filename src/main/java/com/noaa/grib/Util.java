@@ -21,15 +21,15 @@ public class Util {
     private static final Logger logger = Logger.getLogger(Util.class);
 
     public static File downloadFileFromURL(URI uri) throws Throwable {
-        String tmp = System.getProperty("java.io.tmpdir");
         String filename = Paths.get(uri.getPath()).getFileName().toString();
+        String tmp = System.getProperty("java.io.tmpdir");
         File destination = new File(tmp, filename);
         downloadFileFromURL(uri.toURL(), destination);
         return destination;
     }
 
     public static void downloadFileFromURL(URL url, File destination) throws Throwable {
-        logger.info("Downloading " + url.getPath() + " in " + destination.getAbsolutePath());
+        logger.info("Downloading " + url.toExternalForm() + " in " + destination.getAbsolutePath());
         try (
                 ReadableByteChannel rbc = Channels.newChannel(url.openStream());
                 FileOutputStream fos = new FileOutputStream(destination);) {
@@ -46,11 +46,11 @@ public class Util {
         return new ucar.unidata.io.RandomAccessFile(file.getAbsolutePath(), mode);
     }
 
-    
+
     public static void showGrib1(File gridFile) throws NoValidGribException, IOException {
 
         RandomAccessFile randomFile = Util.toRandomAccessFile(gridFile);
-        
+
         //Create grib2Input file
         Grib1Input grib2Input = new Grib1Input(randomFile);
 
@@ -83,6 +83,6 @@ public class Util {
             System.out.println("Grib2Record:" + r.getHeader());
         });
 
-    }    
-    
+    }
+
 }
