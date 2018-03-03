@@ -1,9 +1,8 @@
 package com.noaa.grib;
 
-import java.io.File;
-import java.net.URI;
-
 import ucar.grib.grib2.Grib2Dump;
+
+import java.io.File;
 
 /**
  *
@@ -13,19 +12,17 @@ import ucar.grib.grib2.Grib2Dump;
  *
  * @author humbertodias
  */
-public class GribDecoder {
+public class Grib2Decoder {
 
 	public static void main(String ... args) throws Throwable {
 
 		if (args.length < 1) {
-			throw new RuntimeException("Usage GRIB2_URL_FILE");
+			throw new RuntimeException("Usage GRIB2_URL_OR_FILE");
 		}
 
-		URI gribUrlFile = URI.create(args[0]);
-		File gribFile = Util.downloadFileFromURL(gribUrlFile);
-
-		String[] pargs = new String[] { gribFile.getAbsolutePath() };
-		Grib2Dump.main(pargs);
+		File gribFile = Util.downloadFileIfNecessary(args[0]);
+		Grib2Dumper grib2Dumper = new Grib2Dumper(gribFile);
+		grib2Dumper.dump(System.out, false);
 	}
 
 }

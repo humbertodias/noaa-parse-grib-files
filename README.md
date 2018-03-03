@@ -62,8 +62,8 @@ Run
 
 ```
 mvn compile exec:java \
--Dexec.mainClass="com.noaa.grib.GribDecoder" \
--Dexec.args="http://www.ftp.ncep.noaa.gov/data/nccf/com/wave/prod/glwu.20180214/glwu.grlc_2p5km_sr.t02z.grib2"
+-Dexec.mainClass="com.noaa.grib.Grib2Decoder" \
+-Dexec.args="http://www.ftp.ncep.noaa.gov/data/nccf/com/wave/prod/glwu.20180224/glwu.grlc_2p5km.t01z.grib2"
 ```
 
 
