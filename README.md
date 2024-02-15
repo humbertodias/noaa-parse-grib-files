@@ -32,12 +32,12 @@ Java Way to download and parse GRIB files.
 
 Clone
 
-```
+```shell
 git clone https://github.com/humbertodias/noaa-parse-grib-files.git
 ```
 Inside the folder
 
-```
+```shell
 cd noaa-parse-grib-files
 ```
 
@@ -60,7 +60,7 @@ DD
 
 Run
 
-```
+```shell
 mvn compile exec:java \
 -Dexec.mainClass="com.noaa.grib.Grib2Decoder" \
 -Dexec.args="http://www.ftp.ncep.noaa.gov/data/nccf/com/wave/prod/glwu.20180224/glwu.grlc_2p5km.t01z.grib2"

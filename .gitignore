@@ -24,6 +24,7 @@ log4j-application.log
 .idea/**/workspace.xml
 .idea/**/tasks.xml
 .idea/dictionaries
+*.iml
 
 # Sensitive or high-churn files:
 .idea/**/dataSources/

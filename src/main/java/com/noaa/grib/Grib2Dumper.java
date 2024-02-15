@@ -18,14 +18,11 @@ public class Grib2Dumper {
     private final RandomAccessFile raf;
     private final Grib2Data gd;
 
-    private String gribFile;
-
     public Grib2Dumper(File gribFile) throws IOException {
         this(gribFile.getAbsolutePath());
     }
 
     public Grib2Dumper(String gribFile) throws IOException {
-        this.gribFile = gribFile;
         this.raf = new RandomAccessFile(gribFile, "r");
         this.gd = new Grib2Data(raf);
 

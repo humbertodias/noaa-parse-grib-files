@@ -17,6 +17,10 @@ import java.nio.file.Paths;
 
 public class Util {
 
+    private Util(){
+
+    }
+
     private static final Logger logger = Logger.getLogger(Util.class);
 
     public static boolean isLocalFile(String path) {
@@ -70,15 +74,11 @@ public class Util {
 
         grib2Input.scan(false, false);
 
-        grib2Input.getProducts().stream().forEach((r) -> {
-            System.out.println("Product.Header: " + r.getHeader());
-        });
+        grib2Input.getProducts().forEach((r) -> System.out.println("Product.Header: " + r.getHeader()));
 
         System.out.println("Records.size:" + grib2Input.getRecords().size());
 
-        grib2Input.getRecords().stream().forEach((r) -> {
-            System.out.println("Record:" + r);
-        });
+        grib2Input.getRecords().forEach((r) -> System.out.println("Record:" + r));
 
     }
 
@@ -86,11 +86,9 @@ public class Util {
 
         Grib2Dumper grib2Dumper = new Grib2Dumper(gridFile);
         Grib2Input grib2Input = grib2Dumper.getInput();
-        grib2Input.getProducts().stream().forEach((p) -> {
-            grib2Dumper.printProduct(p, System.out);
-        });
+        grib2Input.getProducts().forEach((p) -> grib2Dumper.printProduct(p, System.out));
 
-        grib2Input.getRecords().stream().forEach((r) -> {
+        grib2Input.getRecords().forEach((r) -> {
             try {
                 grib2Dumper.printRecord(r, System.out, true);
             } catch (IOException e) {
